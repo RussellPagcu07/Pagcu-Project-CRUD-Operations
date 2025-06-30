@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Great+Vibes&display=swap');
+
+body {
+  font-family: 'Cardo', serif;
+  background: url('../images/enchanting.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #3e2c5e;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 680px;
+  margin: 3rem auto;
+  background: rgba(255, 255, 255, 0.75); 
+  backdrop-filter: blur(8px); 
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(178, 153, 255, 0.15);
+  border: 1px solid #e8ddff;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #7a5ccf;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin: 1rem 0 0.5rem;
+  font-weight: bold;
+  color: #5b478c;
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #cbbef5;
+  border-radius: 10px;
+  background-color: #fefaff;
+  color: #3e2c5e;
+  font-family: 'Cardo', serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #a998e8;
+  outline: none;
+  background-color: #fcf9ff;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #a69bc2;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  background: linear-gradient(to right, #7d5fcf, #a98fe8);
+  color: #fff;
+  padding: 0.8rem 1.3rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  font-size: 1.05rem;
+  font-family: 'Cardo', serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(110, 90, 180, 0.3);
+}
+
+button:hover {
+  background: linear-gradient(to right, #694bb2, #9377d2);
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(110, 90, 180, 0.45);
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: #6c53aa;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  font-family: 'Great Vibes', cursive;
+}
+
+h3 {
+  color: #8163c3;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.summary {
+  background-color: #f5f1fc;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  border: 1px solid #e0d9f7;
+  color: #4d3b6f;
+}
+
+.special-message {
+  background-color: #ede7fb;
+  color: #5a4897;
+  font-weight: bold;
+  text-align: center;
+  padding: 1.2rem;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  box-shadow: 0 0 8px rgba(180, 150, 250, 0.1);
+}
+
+.justified-message {
+  text-align: justify;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.left-align-date {
+  text-align: left;
+  font-style: italic;
+  margin-bottom: 2rem;
+  color: #3e2c5e; 
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.menu-btn {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #d8c9f1, #e6dcfa);
+  color: #4a3776;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(150, 120, 200, 0.25);
+  transition: all 0.3s ease;
+  font-family: 'Cardo', serif;
+}
+
+.menu-btn:hover {
+  background: linear-gradient(to right, #cbbef5, #f2eaff);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(150, 120, 200, 0.35);
+}
+
+.success {
+  background-color: #e6f7e6;
+  border-left: 5px solid #6cc070;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  color: #3c763d;
+}
+
+.error {
+  background-color: #fdecea;
+  border-left: 5px solid #e87d7d;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  color: #a94442;
+}
+
+.nav-button {
+  background: linear-gradient(to right, #7d5fcf, #a98fe8);
+  color: #fff;
+  padding: 0.8rem 1.3rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.05rem;
+  font-family: 'Cardo', serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(110, 90, 180, 0.3);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav-button:hover {
+  background: linear-gradient(to right, #694bb2, #9377d2);
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(110, 90, 180, 0.45);
+}
+
+.left-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.left-buttons .nav-button {
+  margin-top: 0;
+}
+
+.scroll-box {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-top: 1.5rem;
+  border-top: 2px solid #ded1f6;
+  border-bottom: 2px solid #ded1f6;
+}
+
+.scroll-box::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+  background: #c8b3f0;
+  border-radius: 10px;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+  background: #f3edff;
+}
+
+.nav-button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Banish a Guest Entry</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔥 Banish an Entry from the Guestbook</h1>
+    <form method="GET" action="../Feedback/delete_entry.php">
+      <label for="entry_id">🗝️ Entry ID to Banish:</label>
+      <input type="number" name="id" id="entry_id" required />
+      <button type="submit">💀 Banish Now</button>
+    </form>
+
+    <form action="index.html">
+      <button type="submit" class="secondary">🔙 Return to Grimoire</button>
+    </form>
+  </div>
+</body>
+</html>

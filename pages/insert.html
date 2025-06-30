@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Guest Entry - Magick&Spell</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🪄 Add Magical Guest Entry</h1>
+    <form method="POST" action="../Feedback/guestbook.php">
+      <label for="name">✨ Your Name (or Magical Alias):</label>
+      <input type="text" name="name" id="name" required>
+
+      <label for="variant">🔮 Favorite Potion (Scent Variant):</label>
+      <select name="variant" id="variant" required>
+        <option value="" disabled selected>-- Choose a Potion --</option>
+        <option value="Ardor Victor">Ardor Victor</option>
+        <option value="Vir Fortis">Vir Fortis</option>
+        <option value="Lux Abundantia">Lux Abundantia</option>
+        <option value="Luna Serenitas">Luna Serenitas</option>
+        <option value="Amore Creatrix">Amore Creatrix</option>
+      </select>
+
+      <label>☁️ Choose Your Elixir Size:</label>
+      <input type="radio" id="30ml" name="size" value="30ml Spray" required>
+      <label for="30ml">30ml Spray (₱199)</label>
+
+      <input type="radio" id="10ml" name="size" value="10ml Roll-on">
+      <label for="10ml">10ml Roll-on (₱99)</label>
+
+      <label for="quantity">🫧 Quantity of Bottles:</label>
+      <input type="number" name="quantity" id="quantity" min="1" value="1" required>
+
+      <label for="message">💫 Cast Your Spell or Leave a Blessing:</label>
+      <textarea name="message" id="message" rows="4" required></textarea>
+
+      <button type="submit">🕯️ Submit Your Scroll</button>
+    </form>
+
+    <form action="index.html">
+      <button type="submit" class="secondary">🔙 Return to Grimoire</button>
+    </form>
+  </div>
+</body>
+</html>
